@@ -7,19 +7,24 @@
         margin: 10px;
 
         em {
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             display: block;
-            background-color: var(--red);
+            // background-color: var(--red);
+            background-image: url(../../img/ico_logo.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 50px auto;
             margin-right: 10px;
             // animation: ani 20s 20s ease-in-out infinite;
         }
 
         span {
-            font-size: 20px;
+            font-size: 16px;
             line-height: 1;
             font-weight: 900;
             text-transform: uppercase;
+            margin-top: 8px;
         }
     }
 }

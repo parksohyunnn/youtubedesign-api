@@ -1,10 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Figma = () => {
     return (
-        <div>
+        <Main>
             Figma
-        </div>
+        </Main>
     )
 }
 

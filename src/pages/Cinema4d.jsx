@@ -1,10 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const Cinema4d = () => {
     return (
-        <div>
+        <Main>
             Cinema4d
-        </div>
+        </Main>
     )
 }
 

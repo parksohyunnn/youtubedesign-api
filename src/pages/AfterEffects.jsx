@@ -1,10 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const AfterEffects = () => {
     return (
-        <div>
+        <Main>
             AfterEffects
-        </div>
+        </Main>
     )
 }
 

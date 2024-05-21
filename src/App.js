@@ -1,27 +1,23 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import React, { Suspense, lazy } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Main from './components/section/Main';
 
-
-import Home from './pages/Home'
-import Recommend from './pages/Recommend'
-import Popularity from './pages/Popularity'
-import Website from './pages/Website'
-import Photoshop from './pages/Photoshop'
-import Illustration from './pages/Illustration'
-import Figma from './pages/Figma'
-import PremierPro from './pages/PremierPro'
-import AfterEffects from './pages/AfterEffects'
-import Cinema4d from './pages/Cinema4d'
-import Not from './pages/Not'
-import Header from './components/section/Header'
-import Main from './components/section/Main'
-import Footer from './components/section/Footer'
+const Home = lazy(() => import('./pages/Home'));
+const Recommend = lazy(() => import('./pages/Recommend'));
+const Popularity = lazy(() => import('./pages/Popularity'));
+const Website = lazy(() => import('./pages/Website'));
+const Photoshop = lazy(() => import('./pages/Photoshop'));
+const Illustration = lazy(() => import('./pages/Illustration'));
+const Figma = lazy(() => import('./pages/Figma'));
+const PremierPro = lazy(() => import('./pages/PremierPro'));
+const AfterEffects = lazy(() => import('./pages/AfterEffects'));
+const Cinema4d = lazy(() => import('./pages/Cinema4d'));
+const Not = lazy(() => import('./pages/Not'));
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
-      <Main>
+      <Suspense fallback={<Main />}>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/recommend' element={<Recommend />} />
@@ -35,10 +31,9 @@ const App = () => {
           <Route path='/cinema4d' element={<Cinema4d />} />
           <Route path='/*' element={<Not />} />
         </Routes>
-      </Main>
-      <Footer />
-    </BrowserRouter>
-  )
+      </Suspense>
+    </BrowserRouter >
+  );
 }
 
 export default App

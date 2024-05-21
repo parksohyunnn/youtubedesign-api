@@ -2,9 +2,12 @@ import React from 'react'
 
 const Logo = () => {
     return (
-        <div>
-            Logo
-        </div>
+        <h1 className="header__logo">
+            <a href='/'>
+                <em aria-hidden='true'></em>
+                <span>Design<br />Youtube</span>
+            </a>
+        </h1>
     )
 }
 

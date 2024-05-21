@@ -1,4 +1,4 @@
-import { GoHomeFill } from "react-icons/go";
+// import { GoHomeFill } from "react-icons/go";
 import { MdRecommend } from "react-icons/md";
 import { RiVipCrownLine } from "react-icons/ri";
 import { CgWebsite } from "react-icons/cg";
@@ -15,11 +15,11 @@ import { AiFillYoutube } from "react-icons/ai";
 import { AiOutlineInstagram } from "react-icons/ai";
 
 export const headerMenus = [
-    {
-        title: "홈",
-        icon: <GoHomeFill />,
-        src: "/Home"
-    },
+    // {
+    //     title: "홈",
+    //     icon: <GoHomeFill />,
+    //     src: "/Home"
+    // },
     {
         title: "추천",
         icon: <MdRecommend />,

@@ -1,10 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 const PremierPro = () => {
     return (
-        <div>
+        <Main>
             PremierPro
-        </div>
+        </Main>
     )
 }
 
